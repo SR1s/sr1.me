@@ -1,1 +1,3 @@
 baseurl: /sr1.me
+markdown: rdiscount
+pygments: true
