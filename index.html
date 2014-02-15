@@ -34,7 +34,7 @@ title: So you are the one
               </p>
             </header>
             <div class="entry-content">
-              {{ post.content }}
+              {{ post.content | truncate:255 }}
             </div>
             <footer>
               <a rel="full-article" href="{{ site.baseurl }}{{ post.url }}">Continue reading …</a>
