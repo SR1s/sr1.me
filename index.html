@@ -1,11 +1,53 @@
 ---
-layout: post
-title: so you are the 1 | SR1
+
+title: So you are the one
+
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-    {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-</ul>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }} | SR1</title>
+    <meta charset="utf8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <figure class="logo">
+        <a href="/"></a>
+      </figure>
+      <hgroup>
+        <h1>SR1</h1>
+        <h2>在温室里想象南极，<br/>谁都可以做得到。</h2>
+      </hgroup>
+    </header>
+    <div id="main">
+      <div id="content">
+        <div class="blog-index">
+          {% for post in site.posts %}
+          <article>
+            <header>
+              <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+              <p class="meta">
+                <time>{{ post.date | date_to_string }}</time>
+              </p>
+            </header>
+            <div class="entry-content">
+              {{ post.content }}
+            </div>
+            <footer>
+              <a rel="full-article" href="{{ site.baseurl }}{{ post.url }}">Continue reading …</a>
+            </footer>
+          </article>
+          {% endfor %}
+        </div>
+        <div class="archives-link">
+          <h2><a href="">全部列表 →</a></h2>
+        </div>
+      </div>
+    </div>
+  </body>
+
+
+</html>
