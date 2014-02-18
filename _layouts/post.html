@@ -20,13 +20,13 @@
       <div id="content">
         <article>
           <header>
-            <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+            <h1 class="entry-title"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
             <p class="meta">
-              <time>{{ post.date | date_to_string }}</time>
+              <time>{{ page.date | date_to_string }}</time>
             </p>
             </header>
             <div class="entry-content">
-              {{ post.content }}
+              {{ content }}
             </div>
           </article>
         <div class="archives-link">
