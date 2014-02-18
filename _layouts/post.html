@@ -18,17 +18,19 @@
     </header>
     <div id="main">
       <div id="content">
-        <article>
-          <header>
-            <h1 class="entry-title"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
-            <p class="meta">
-              <time>{{ page.date | date_to_string }}</time>
-            </p>
-            </header>
-            <div class="entry-content">
-              {{ content }}
-            </div>
-          </article>
+        <div>
+          <article>
+            <header>
+              <h1 class="entry-title"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></h1>
+              <p class="meta">
+                <time>{{ page.date | date_to_string }}</time>
+              </p>
+              </header>
+              <div class="entry-content">
+                {{ content }}
+              </div>
+            </article>
+        </div>
         <div class="archives-link">
           <h2><a href="/">全部列表 →</a></h2>
         </div>

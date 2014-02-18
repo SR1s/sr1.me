@@ -32,6 +32,10 @@ h2, section h1 {
 	font-size: 1.5em;
 }
 
+article {
+	padding-top: 2em;
+}
+
 body>header {
 	position: fixed;
 	width: 248px;
@@ -151,7 +155,8 @@ body>header h2 {
 }
 
 body #content>div>article {
-	padding: 0 55px;
+	padding-left: 55px;
+	padding-right: 55px;
 }
 
 article header {
