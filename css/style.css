@@ -138,6 +138,38 @@ body>header h2 {
 	color:#f8f8f8
 }
 
+#content .entry-content h1 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #fff;
+	padding: 5px;
+	margin: 5px 0;
+	background-color: #58ad69;
+}
+
+#content .entry-content h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #58ad69;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+#content .entry-content p {
+	font-size: 1em;
+	padding: 5px;
+}
+
+#content .entry-content code {
+	border-width: 1px;
+	border-style: double;
+	border-color: #58ad69;
+	border-radius: 2px;
+	font-size: 0.8em;
+	vertical-align: middle;
+	padding: 1px 4px 1px 4px;
+}
+
 .archives-link {
 	margin: 0;
 	padding: 10px 16px 16px 0;
