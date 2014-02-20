@@ -101,7 +101,7 @@ body>header h2 {
 }
 
 
-#content .blog-index article h1 {
+#content .blog-index article header h1 {
 	font-size: 2em;
 	font-weight: bold;
 	line-height: 1.2em;
