@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 解决使用Flask-SQLAlchemy时，中文显示乱码的问题
-
+category: 爬坑之路
 ---
 
 # 问题描述
@@ -11,6 +11,7 @@ title: 解决使用Flask-SQLAlchemy时，中文显示乱码的问题
 # 操作环境
 
 系统：LinuxMint Maya(一个基于Ubuntu的衍生版)
+
 相关软件：Python + Flask + Flask-SQLAlchemy + MySQL
 
 # 解决过程
