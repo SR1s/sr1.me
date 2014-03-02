@@ -236,3 +236,8 @@ article>footer {
 	padding-bottom: 2.5em;
 	margin-top: 2em;
 }
+
+#disqus_thread {
+	width: 790px;
+	margin: 0 55px;
+}
