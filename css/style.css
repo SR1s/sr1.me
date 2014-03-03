@@ -238,6 +238,6 @@ article>footer {
 }
 
 #disqus_thread {
-	width: 790px;
+	max-width: 790px;
 	margin: 0 55px;
 }
