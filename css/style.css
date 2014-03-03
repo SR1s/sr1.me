@@ -4,6 +4,11 @@ body {
 	font-family: "微软雅黑","黑体","source-sans-pro",sans-serif;
 }
 
+::selection {
+	background-color: #9ec27a;
+	color: #fff;
+}
+
 a {
 	color: #58ad69;
 	transition: color 0.3s;
