@@ -28,9 +28,9 @@ p, blockquote, ul, ol {
 	line-height: 1.3em;
 }
 
-article, aside, details, 
-figcaption, figure, footer, 
-header, hgroup, menu, nav, 
+article, aside, details,
+figcaption, figure, footer,
+header, hgroup, menu, nav,
 section, summary {
 	display: block;
 }
@@ -59,7 +59,7 @@ body>header>figure.logo {
 	background-repeat: no-repeat;
 	background-image: url(../images/logo.jpeg);
 	background-size: 128px 128px;
-	border-radius: 5px;	
+	border-radius: 5px;
 	border-width: 5px;
 	border-color: #ffffff;
 	border-style: dashed;
@@ -86,7 +86,7 @@ body>header h2 {
 }
 
 #main {
-	margin-left: 280px;	
+	margin-left: 280px;
 	color: #333;
 }
 
@@ -99,7 +99,7 @@ body>header h2 {
 	padding-top: 2em;
 	border-bottom-color: #aaa;
 	border-width: 0px 0px 1px 0px;
-	border-style: dotted; 
+	border-style: dotted;
 }
 
 #content .blog-index article header {
@@ -168,11 +168,8 @@ body>header h2 {
 }
 
 #content .entry-content code {
-	border-width: 1px;
-	border-style: double;
-	border-color: #58ad69;
-	border-radius: 2px;
-	font-size: 0.8em;
+	color: #58ad69;
+	font-size: 1em;
 	vertical-align: middle;
 	padding: 1px 4px 1px 4px;
 }
@@ -209,7 +206,7 @@ article.hentry header {
 	display: block;
 	border-bottom-color: #aaa;
 	border-width: 0px 0px 1px 0px;
-	border-style: dotted; 
+	border-style: dotted;
 }
 
 article.hentry header h1{
