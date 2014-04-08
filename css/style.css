@@ -27,7 +27,8 @@ p, blockquote, ul, ol {
 	margin-bottom: 0.5em;
 	line-height: 1.3em;
 }
-p:last {
+
+article p:last-child {
 	margin-bottom: 1.5em;
 	line-height: 1.3em;
 }
