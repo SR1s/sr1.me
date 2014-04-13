@@ -188,6 +188,7 @@ body>header h2 {
 	font-size: 1em;
 	vertical-align: middle;
 	padding: 0.5em 4px;
+        white-space: pre-wrap;
 }
 
 .archives-link {
