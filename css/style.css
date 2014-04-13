@@ -2,6 +2,7 @@
 
 body {
 	font-family: "微软雅黑","黑体","source-sans-pro",sans-serif;
+	line-height: 1.3em;
 }
 
 ::selection {
@@ -177,6 +178,7 @@ body>header h2 {
 }
 
 #content .entry-content p {
+	text-indent: 2em;
 	font-size: 1em;
 	padding: 5px;
 }
