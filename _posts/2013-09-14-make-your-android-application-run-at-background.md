@@ -4,16 +4,6 @@ category: way-to-explore
 layout: post
 ---
 
-# 目录 
-
-1. 应用后台运行 
-
-2. 拦截返回键 
-
-3. 拦截返回键实现应用后台运行 
-
-4. 再说后台运行
-
 # 应用后台运行
 
 在Activity中有个“moveTaskToBack(boolean nonRoot)”方法，从名字上就知道是把任务放到后台(即Activity不调用“finish()”方法)运行。参数为false代表只有当当前Activity为程序的根(即应用启动后的第一个Activity)时候才能放到后台，参数为true代表任意Activity都可以放到后台运行，而不被销毁(被finish())。
