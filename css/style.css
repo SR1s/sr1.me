@@ -188,7 +188,18 @@ body>header h2 {
 	font-size: 1em;
 	vertical-align: middle;
 	padding: 0.5em 4px;
-        white-space: pre-wrap;
+    white-space: pre-wrap;
+}
+
+#content .entry-content blockquote {
+    margin-left: 2em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-left: 3px solid #8cc665;
+}
+
+#content .entry-content blockquote p{
+    text-indent: 0em;
 }
 
 .archives-link {
