@@ -16,7 +16,7 @@ category: 爬坑之路
 
 # 解决过程
 
-初步判定是SQLAlchemy在链接数据库时使用的编码不正确导致，在网上使用相关关键词进行搜索，发现相似案例[Python+SQLAlchemy+MySQLdb+MySQL的中文乱码及其解决办法](http://biancheng.dnbcw.info/mysql/357779.html)，虽然不是使用Flask框架，但解决方式有可能是类似的。按照文中的方法，在数据库配置的URI末尾添加指定字符集的参数charset=utf8，删除数据库后重试，问题依旧。
+初步判定是SQLAlchemy在链接数据库时使用的编码不正确导致，Google到一个相似案例[Python+SQLAlchemy+MySQLdb+MySQL的中文乱码及其解决办法](http://biancheng.dnbcw.info/mysql/357779.html)，虽然不是使用Flask框架，但解决方式有可能是类似的。按照文中的方法，在数据库配置的URI末尾添加指定字符集的参数charset=utf8，删除数据库后重试，问题依旧。
 
 沿着这个思路继续查资料，看到这篇[sqlalchemy中文问题解决方案](http://firefish.blog.51cto.com/298258/112794)，看完作者的分析(解决方法和上面的一样)，便学着去看Flask的文档，文档中提到可以通过设置SQLALCHEMY_NATIVE_UNICODE来禁止使用SQLAlchemy默认的Unicode编码。有可能是SQLAlchemy默认的Unicode编码不是UTF-8，抱着这样的想法，在程序中指定了`SQLALCHEMY_NATIVE_UNICODE=False`，执行程序，报错。
 
