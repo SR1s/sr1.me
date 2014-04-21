@@ -191,6 +191,12 @@ body>header h2 {
     white-space: pre-wrap;
 }
 
+#content .entry-content em {
+	color: #58ad69;
+	font-size: 1em;
+	font-weight: bold;
+}
+
 #content .entry-content blockquote {
     margin-left: 2em;
     padding-left: 0.5em;
