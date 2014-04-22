@@ -1,5 +1,5 @@
 ---
-title: 点击就能加入微信群(一个用微信公众号推广微信群的小技巧)
+title: 点击就能加入微信群(推广微信群的小技巧)
 category: way-to-explore
 layout: post
 ---
