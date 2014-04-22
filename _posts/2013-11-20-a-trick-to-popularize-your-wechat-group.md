@@ -59,9 +59,9 @@ layout: post
 
 关于二维码的具体的生成细节可以看看陈皓老师的[二维码的生成细节和原理][5]，如果仅仅想要生成自己的个性二维码，百度一下“[二维码生成][6]”，就能找到一大票应用啦。
 
- [1]: http://ww4.sinaimg.cn/large/6dc8961bjw1earf1uiggfj20dc0nqzll.jpg
- [2]: http://ww4.sinaimg.cn/large/6dc8961bjw1earf9py01cj20ez0qomxv.jpg
- [3]: http://ww2.sinaimg.cn/large/6dc8961bjw1earf1i04nbj20dc0nq40d.jpg
- [4]: http://ww2.sinaimg.cn/large/6dc8961bjw1earjqgjhlaj20dc0nqgn2.jpg
+ [1]: http://sr1-me.qiniudn.com/131120/01.jpg
+ [2]: http://sr1-me.qiniudn.com/131120/02.jpg
+ [3]: http://sr1-me.qiniudn.com/131120/03.jpg
+ [4]: http://sr1-me.qiniudn.com/131120/04.jpg
  [5]: http://coolshell.cn/articles/10590.html
  [6]: http://www.baidu.com/s?wd=%B6%FE%CE%AC%C2%EB%C9%FA%B3%C9
