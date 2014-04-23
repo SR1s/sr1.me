@@ -54,12 +54,12 @@ title: So you are the one
         <div class="archives-link">
           <h2>
             {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
+            <a href="{{ site.baseurl }}{{ paginator.previous_page_path  }}"上一页</a>
             {% endif %}
           </h2>
           <h2>
             {% if paginator.next_page %}
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+              <a href="{{ paginator.next_page_path }}">下一页</a>
             {% endif %}
           </h2>
         </div>
