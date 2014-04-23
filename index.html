@@ -34,7 +34,7 @@ title: So you are the one
     <div id="main">
       <div id="content">
         <div class="blog-index">
-          {% for post in site.posts %}
+          {% for post in paginator.posts %}
           <article>
             <header>
               <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
