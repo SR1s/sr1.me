@@ -52,16 +52,16 @@ title: So you are the one
           {% endfor %}
         </div>
         <div class="archives-link">
+          {% if paginator.previous_page %}
           <h2>
-            {% if paginator.previous_page %}
-            <a href="{{ site.baseurl }}{{ paginator.previous_page_path  }}"上一页</a>
-            {% endif %}
+            <a href="{{ paginator.previous_page_path }}">上一页</a>
           </h2>
+          {% endif %}
+          {% if paginator.next_page %}
           <h2>
-            {% if paginator.next_page %}
               <a href="{{ paginator.next_page_path }}">下一页</a>
-            {% endif %}
           </h2>
+          {% endif %}
         </div>
       </div>
     </div>
