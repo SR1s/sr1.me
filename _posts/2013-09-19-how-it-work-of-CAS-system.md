@@ -88,5 +88,5 @@ layout: post
 
 在启用了session的服务器上，用户访问我们的应用时，服务器会为这个用户生成一个session，这个session能用来唯一标识一个用户，用户执行到第四步的时候，他访问我们应用的页面时，不仅带回了ticket的值，也把session的值带回了，因此我们能根据session和ticket把我们的用户，和CAS认证服务器那边的用户对应起来（我们就能知道是哪个用户去CAS那边认证了）这个有点难懂，结合session的原理和CAS的流程多理解一下。
 
- [1]: http://blog.ros-lab.com/wp-content/uploads/2013/09/CASpage.png
- [2]: http://blog.ros-lab.com/wp-content/uploads/2013/09/CAS.png
+ [1]: http://sr1-me.qiniudn.com/130919/01.png
+ [2]: http://sr1-me.qiniudn.com/130919/02.png
