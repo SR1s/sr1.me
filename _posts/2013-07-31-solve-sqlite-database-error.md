@@ -1,5 +1,5 @@
 ---
-title: 问题解决：SQLite：DatabaseError : attempt to write a readonly database
+title: 问题解决:SQLite-DatabaseError:attempt to write a readonly database
 category: way-to-explore
 layout: post
 ---
@@ -14,10 +14,10 @@ LinuxMint + Apache + Mod_Wsgi + Python + Django + SQLite3
 
 # 解决方法
 
-将数据库文件（假设文件名为django.db）和数据库（假设文件夹名为database/）所在文件夹所属用户更改为www-data，命令如下（bash当前目录为database/文件夹的父文件夹）：
-
     chown www-data database/
     chown www-data database/django.db
+
+将数据库文件（假设文件名为django.db）和数据库（假设文件夹名为database/）所在文件夹所属用户更改为www-data，命令如上（bash当前目录为database/文件夹的父文件夹）。
 
 # 原因分析
 
