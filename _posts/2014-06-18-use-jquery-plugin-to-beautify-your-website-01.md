@@ -52,7 +52,9 @@ Flickerplate是一个图片轮播插件，支持响应式和触摸手势，大�
 4. data-theme属性设置主题，有两个默认值可选，默认是light，此时左右两个箭头、文本文字的颜色是白色，文本的背景颜色是黑色，若设置为dark，则这两部分的内容的颜色会对调;
 5. li元素中的子元素使用了两个css类，flick-title和flick-sub-text这两个类样式都使文本居中，文本的显示效果受data-theme和data-block-text的值影响。从语义上就能看出，，flick-title是大标题，flick-sub-text是副标题或正文，因此字号上前者会比后者大。
 
-## 4. 前面仅仅是定义了HTML的内容，要让Flickerplate真正工作起来，还需要执行以下方法调用。
+## 4. 让Flickerplate工作起来
+
+前面仅仅是定义了HTML的内容，要让Flickerplate真正工作起来，还需要执行以下方法调用。
 
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -60,7 +62,7 @@ Flickerplate是一个图片轮播插件，支持响应式和触摸手势，大�
 		});
 	</script>
 
-上面这段代码，使用JQuery的方法，在页面加载完毕之后，指定相应的HTML内容，这里是id为flicker-area的区域，使Flickerplate在这上边生效。
+上面这段代码使用JQuery的选择器，在页面加载完毕之后，指定相应的HTML内容（这里是id为flicker-area的区域），使Flickerplate在这个区域生效。
 
 完成了以上几个步骤，就大功告成啦。是不是很简单呢！
 
