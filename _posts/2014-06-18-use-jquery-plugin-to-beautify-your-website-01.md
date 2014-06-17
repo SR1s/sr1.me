@@ -15,7 +15,7 @@ Flickerplate是一个图片轮播插件，支持响应式和触摸手势，大�
 
 # 如何使用（我是勤劳的搬运工）
 
-## 1. 首先下载在主页下载Flickerplate插件，解压css、js文件夹到项目中
+## 1. 下载Flickerplate插件，解压css、js文件夹到项目中
 
 ## 2. 在网页中引入以下几个文件：
 
@@ -46,11 +46,11 @@ Flickerplate是一个图片轮播插件，支持响应式和触摸手势，大�
 		</ul>
 	</div>
 
-每一个<li>元素就是一个轮播页；
-data-background属性指定轮播页的背景图片；
-data-block-text属性设置是否显示文字的背景色，默认值是true；
-data-theme属性设置主题，有两个默认值可选，默认是light，此时左右两个箭头、文本文字的颜色是白色，文本的背景颜色是黑色，若设置为dark，则这两部分的内容的颜色会对调;
-<li>元素中的子元素使用了两个css类，flick-title和flick-sub-text这两个类样式都使文本居中，文本的显示效果受data-theme和data-block-text的值影响。从语义上就能看出，，flick-title是大标题，flick-sub-text是副标题或正文，因此字号上前者会比后者大。
+1. 每一个li元素就是一个轮播页；
+2. data-background属性指定轮播页的背景图片；
+3. data-block-text属性设置是否显示文字的背景色，默认值是true；
+4. data-theme属性设置主题，有两个默认值可选，默认是light，此时左右两个箭头、文本文字的颜色是白色，文本的背景颜色是黑色，若设置为dark，则这两部分的内容的颜色会对调;
+5. li元素中的子元素使用了两个css类，flick-title和flick-sub-text这两个类样式都使文本居中，文本的显示效果受data-theme和data-block-text的值影响。从语义上就能看出，，flick-title是大标题，flick-sub-text是副标题或正文，因此字号上前者会比后者大。
 
 ## 4. 前面仅仅是定义了HTML的内容，要让Flickerplate真正工作起来，还需要执行以下方法调用。
 
