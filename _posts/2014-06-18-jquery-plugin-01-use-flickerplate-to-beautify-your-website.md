@@ -5,9 +5,9 @@ layout: post
 ---
 
 # 新系列or新坑？
-前几天刷微博，发现某公号发布了这篇文章[50个jQuery插件可将你的网站带到另外一个高度](http://www.lupaworld.com/article-239506.html)，今天终于抽空看了一下，里面推荐的插件真心高大上，用在网站上绝对能提升逼格。因此决定把这50个插件都试一遍，顺便开坑。BTW，这段时间已经挖了好几篇文章的坑，可惜一直没填上.
+前几天刷微博，发现某公号发布了这篇文章[50个jQuery插件可将你的网站带到另外一个高度](http://www.lupaworld.com/article-239506.html)，今天终于抽空看了一下，里面推荐的插件真心高大上，用在网站上绝对能提升逼格。因此决定把这50个插件都试一遍，顺便开坑。BTW，这段时间已经挖了好几篇文章的坑，可惜一直没填上。
 
-![笑哭](http://sr1-me.qiniudn.com/emotions/laugh2cry.jpg)。
+![笑哭](http://sr1-me.qiniudn.com/emotions/laugh2cry.jpg)
 
 # Flickerplate是什么？
 
