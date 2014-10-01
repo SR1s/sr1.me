@@ -26,9 +26,9 @@ Android Studio是一款Android集成开发环境(IDE)，由Android官方基于In
 
 安装完毕后记得：
 
-1.配置系统环境变量JAVA_HOME为JDK的安装路径；
+1. 配置系统环境变量JAVA_HOME为JDK的安装路径；
 
-1.在系统环境变量的Path里添加JDK、JRE的路径。
+1. 在系统环境变量的Path里添加JDK、JRE的路径。
 
 这个时候Android Studio总算是启动起来了。耗时两晚，实在是折腾。
 
