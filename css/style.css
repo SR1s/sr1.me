@@ -29,6 +29,14 @@ p, blockquote, ul, ol {
 	line-height: 1.3em;
 }
 
+ol, ul {
+	-webkit-margin-start: 2em;
+}
+
+li p {
+	text-indent: 0em;
+}
+
 article p:last-child {
 	margin-bottom: 1.5em;
 	line-height: 1.3em;
