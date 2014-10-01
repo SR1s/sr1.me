@@ -33,10 +33,6 @@ ol, ul {
 	-webkit-margin-start: 2em;
 }
 
-li p {
-	text-indent: 0em;
-}
-
 article p:last-child {
 	margin-bottom: 1.5em;
 	line-height: 1.3em;
@@ -190,7 +186,9 @@ body>header h2 {
 	font-size: 1em;
 	padding: 5px;
 }
-
+#content .entry-content li p {
+	text-indent: 0em;
+}
 #content .entry-content code {
 	color: #58ad69;
 	font-size: 1em;
