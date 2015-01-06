@@ -8,7 +8,7 @@ layout: post
 
 代理模式是一种为另一个对象提供一个替身或占位符以便控制对这个对象的访问的一种设计模式。[Wiki](http://zh.wikipedia.org/wiki/%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F )
 
-以Android开发为例。众所周知，Android系统碎片化很严重，倘若我们需要自行开发一个播放器，在高版本的系统使用新的API来实现，而在低版本的系统使用低版本的API来实现。为了让这两个不同的播放器实现跟调用方解耦，降低代码之间的耦合度，这个时候我们就可以通过使用代理模式提供一个代理播放器，从而隐藏我们底层不同播放器的实现。这里主要想记录下两种不同的代理模式的实现。
+以Android开发为例。众所周知，Android系统碎片化很严重，倘若我们需要自行开发一个播放器，在高版本的系统使用新的API来实现，而在低版本的系统使用低版本的API来实现。为了让这两个不同的播放器实现跟调用方解耦，降低代码之间的耦合度，这个时候我们就可以通过使用代理模式提供一个代理播放器，从而隐藏我们底层不同播放器的实现。这里主要想分享下两种不同的代理模式的实现，同时对下这几天学习动态代理模式过程中遇到的问题做一个记录。
 
 # 普通的实现方式
 
@@ -24,7 +24,7 @@ layout: post
     
     /**
      * 旧版本系统使用的播放器实现
-     * /
+     */
     class OldPlayer implements Player {
       @Override public void play() {
         System.out.println("Old player start play.");
@@ -45,7 +45,7 @@ layout: post
     
     /**
      * 新版本系统使用的播放器实现
-     * /
+     */
     class NewPlayer implements Player {
       @Override public void play() {
         System.out.println("New player start play.");
@@ -146,7 +146,7 @@ Java里还有一种方式可以实现代理模式，这种实现方式称之为�
         return method.invoke(player, args);
       }
     }
-    
+
     public class ProxyPattern {
       public static void main(String[] args) {
       
