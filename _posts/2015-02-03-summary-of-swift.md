@@ -17,12 +17,12 @@ layout: post
 
 # 变量、常量与值
 
-使用let声明常量
+使用`let`声明常量
 
     let hello = "hello, world!"
 
 
-使用var声明变量
+使用`var`声明变量
 
     var str = "Hello, playground"
 
@@ -48,6 +48,7 @@ layout: post
     let ageLabelSimple = "Age: \(age)"
 
 用`[]`创建数组或字典，通过提供下标或键来访问值
+
     var lis = [
         "I",
         "am",
@@ -163,7 +164,7 @@ Python类似的用法：使用`..<`创建一个指定范围的索引列表
     println(fir4Loop)
 
 
-一般的for循环用法
+一般的`for`循环用法
 
     var sed4Loop = 0
     for var i = 0; i < 4; ++i {
@@ -333,7 +334,7 @@ Python类似的用法：使用`..<`创建一个指定范围的索引列表
         }
     }
 
-需要注意的是，在构造器里，self被用于区分name属性和name局部变量
+需要注意的是，在构造器里，`self`被用于区分`name`属性和`name`局部变量
 传递给构造器的参数类似方法调用里的传参，只不过这个方法是初始化的时候调用的
 每个属性的值都需要初始化(在声明的时候，或者构造的时候)
 使用`deinit`来创建析构器
@@ -342,9 +343,9 @@ Python类似的用法：使用`..<`创建一个指定范围的索引列表
 任意标准根类对子类化没有任何要求
 根据需要可以包含或者省略父类
 
-在方法前加上override来覆盖父类的方法
-编译器会检查这个，如果没有添加override，编译器会将之视为一个错误
-倘若使用了override的方法实际上并没有覆盖父类的方法，编译器也会将之是为一个错误
+在方法前加上`override`来覆盖父类的方法
+编译器会检查这个，如果没有添加`override`，编译器会将之视为一个错误
+倘若使用了`override`的方法实际上并没有覆盖父类的方法，编译器也会将之是为一个错误
 
     class Square: NamedShape {
         var sideLength: Double
@@ -404,7 +405,7 @@ Python类似的用法：使用`..<`创建一个指定范围的索引列表
 3.改变父类定义的属性的值
 
 若不需要计算属性的值，但仍然需要在赋值前/后运行其他的代码的话
-使用willSet和didSet
+使用`willSet`和`didSet`
 
     class TriangleAndSquare {
         var triangle: EquilateralTriangle {
@@ -636,7 +637,7 @@ Python类似的用法：使用`..<`创建一个指定范围的索引列表
     var possibleInteger: OptValue<Int> = .None
     possibleInteger = .Some(100)
 
-使用where关键字来指定需要满足的条件列表
+使用`where`关键字来指定需要满足的条件列表
 
     func anyCommonElements<T, U where 
         T: SequenceType, U: SequenceType,
