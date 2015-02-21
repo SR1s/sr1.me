@@ -98,7 +98,7 @@ layout: post
 
 作为一个Java程序员，代码规范一般都会这个要求：将`switch`里的每个`case`都抽取到一个方法里去。这样大概是Java程序员唯一能做到的最简单的改进了，采用策略模式的话代码不知要膨胀多少出来。但我们不禁要问问自己：这样就够了吗？(鹅厂人的口头禅？)
 
-## 有闭包，you can do better
+## 3. 有闭包，you can do better
 
     var numberStack = Array<Double>()
 
@@ -143,7 +143,7 @@ layout: post
     
 有了闭包，代码可以写得更紧凑一点。虽然咋看好像没什么差别，但实际上代码的可复用程度以及可维护性都棒了。在这种情况下实际上已经实现了策略模式，而编写的代码却远远比Java少了很多，这在之前是无法想象的。但这就完了吗？No！借助Swift的语言特性(参见前一篇[日志](http://sr1.me/way-to-explore/2015/02/03/summary-of-swift.html))，这还能更精简。
 
-## Swift大法好
+## 4. Swift大法好
 
     var numberStack = Array<Double>()
 
@@ -174,6 +174,6 @@ layout: post
 
 当然这里也有不好的地方：比如你需要知道`$0`和`$1`分别对应闭包方法里的参数是什么意义，否则最开始看的话会比较困惑。而且这种简化写法需要你对这种语言特性有所了解和熟悉，咋一看还是有阅读成本的，但等你适应了这种特性，阅读起来就会感觉非！常！爽！妈蛋我快要爱上这种高逼格的语言了，谁来拉我一把，开发Android去啊！
 
-## That's all, but not ALL.
+## 5. That's all, but not ALL.
 
 > Written with [StackEdit](https://stackedit.io/).
