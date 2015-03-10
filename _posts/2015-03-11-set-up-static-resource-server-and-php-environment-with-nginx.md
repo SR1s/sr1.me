@@ -12,7 +12,7 @@ layout: post
 # Nginx搭建静态文件服务器
 在网上搜罗了一圈，相关的文章一大把，讲得既多又杂，但其实只涉及简单的几行配置而已。
 
-打开Nginx的配置文件，默认的是`/etc/nginx/sites-available/default`这个文件。找到`server`这一块内容，在里面添加以下的配置，相关注释已标注出来，各位看管根据需要自行修改一下就好哈。
+打开Nginx的配置文件，默认的是`/etc/nginx/sites-available/default`这个文件。找到server这一块内容，在里面添加以下的配置，相关注释已标注出来，各位看管根据需要自行修改一下就好哈。
 
     server {
         # 监听来自在所有网络上的80端口的请求
