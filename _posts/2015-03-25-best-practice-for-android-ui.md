@@ -133,6 +133,8 @@ Lint工具是Android官方提供的一个优化点扫描工具，它会在每次
 
 导入之后，include标签实际上会被两个Button代替，也就是使用merge标签的话，导入的时候merge标签会被忽略，merge标签下的控件会被直接放置在文件之中。
 
+还有另一种重用布局的方式：使用fragment。碎片(fragment)是Android 3.0以后引进的一个类似Activity的组件。相比Activity，它更加的轻量，启动和加载更加的快，而且它可以根据需要加载和切换，并且不需要在AndroidManifest.xml文件中声明就能使用，但它必须依赖于Activity才能使用。顾名思义，fragment能够用来组织“小”块的布局，但除此之外，它还能封装一系列的逻辑。因此对于可以重用的布局，比如自定义的对话框，可以使用Fragment来组织管理，方便在代码中重用。
+
 ## 5. 根据需要来加载布局
 
 有些布局内容(如进度条指示器，某个按钮点击后才会出现的额外内容等)并不需要一开始就显示在界面上，一般在开发中会将其可见性设置为invisible或者gone，在需要时候再设置为visible。虽然一开始这些内容以及没显示在界面上了，但实际上在界面初始化的时候，这些内容还是会被加载的。对于这种状况，使用ViewStub标签再适合不过了。
@@ -157,8 +159,6 @@ Lint工具是Android官方提供的一个优化点扫描工具，它会在每次
 通过以上调用，就能把界面给加载出来了。inflatedId属性的值将会在加载完毕之后赋值给被加载页面的根节点的id属性，在这个例子里是common_layout里的最外层LinearLayout。
 
 为什么需要这个属性呢？事情是这样的。ViewStub在加载完毕之后就从界面上消失了，这意味着通过ViewStub的id再也无法索引到这个ViewStub了。那么如果我们需要去动态调整加载进来的界面的控件该怎么办呢？inflatedId这个属性就是帮我们找到这个布局的关键了。如果使用的是方法二来加载页面，inflate()方法调用将会返回加载出来的布局的View给你，通过这个View也是可以操作加载进来的页面的。
-
-TODO fragment标签?
 
 ## 6. 使用后台线程，让ListView流畅滚动
 
@@ -238,7 +238,33 @@ TODO fragment标签?
 
 如果你实现了自己的控件，那么很有必要创建一个drawable为控件可能处于的状态提供对应的表现。这些表现是用户和控件交互能获得的直观反馈，设置控件不同状态下对应的表现的drawable文件大致如下：
 
-TODO
+    <?xml version="1.0" encoding="utf-8" ?>   
+    <selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+        <!-- 默认时的背景图片 -->  
+        <item android:drawable="@drawable/button_default" />    
+        <!-- 没有焦点时的背景图片 -->  
+        <item 
+            android:state_focused="false"
+            android:drawable="@drawable/button_default" />   
+        <!-- 非触摸模式下获得焦点并单击时的背景图片 -->
+        <item
+            android:state_focused="true"
+            android:state_pressed="true"   
+            android:drawable= "@drawable/button_pressed" />  
+        <!-- 触摸模式下单击时的背景图片 -->
+        <item 
+            android:state_focused="false" 
+            android:state_pressed="true"   
+            android:drawable="@drawable/button_pressed" />   
+        <!--选中时的图片背景  -->  
+        <item 
+            android:state_selected="true"   
+            android:drawable="@drawable/button_selected" />   
+        <!--获得焦点时的图片背景  -->  
+        <item 
+            android:state_focused="true"   
+            android:drawable="@drawable/button_selected" />   
+    </selector>
 
 ## 10. 使用字体
 
@@ -360,9 +386,7 @@ Android里的样式有点像CSS里的类。样式允许我们将一组属性集�
 
 ## 18. 使用Toolbar、ActionBar或者支持库(support library)提供的同等控件
 
-如果你的应用的界面使用了包含ActionBar的设计，那么使用SDK提供的Toolbar或ActionBar来实现。不要重复发明轮子，记住这个编程原则。安卓支持库v7(support library v7)为适配Android 2.1+的系统提供了支持。如果你使用ActionBar，那么使用ActionBar样式生成器来方便的定制化它。生成器地址
-
-TODO
+如果你的应用的界面使用了包含ActionBar的设计，那么使用SDK提供的Toolbar或ActionBar来实现。不要重复发明轮子，记住这个编程原则。安卓支持库v7(support library v7)为适配Android 2.1+的系统提供了支持。如果你使用ActionBar，那么使用ActionBar样式生成器来方便的定制化它。生成器地址([传送门](http://jgilfelt.github.io/android-actionbarstylegenerator/))
 
 ## 19. 让系统帮你完成适配。
 Android系统提供了自动根据设备显示能力使用最合适的资源的能力。基本所有的资源都支持通过一定规则来动态切换。如可以通过提供一个res/layout-small/文件夹来为小尺寸的设备提供定制化的布局。
