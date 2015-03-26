@@ -1,4 +1,8 @@
-# Android最佳实践之UI篇
+---
+title:Android最佳实践之UI篇
+category: way-to-explore
+layout: post
+---
 
 # 引子
 不管进行什么开发，桌面也好、移动端也罢，UI一直都是让人头大的一部分。那对于Android开发来说，在UI这一块，是否有什么最佳实践能让人少走一些弯路吗？这两天就这个问题搜了一圈，收获了不少。
