@@ -11,7 +11,7 @@ layout: post
 
 ## 1. 避免嵌套过多层级的布局
 
-即使使用的全都是官方提供的基础布局和控件，也不意味着就能做出高效的UI布局设计。每个布局(layout)，控件(Button、TextView等)，都需要进行初始化，测量大小、定位以及绘制。布局里嵌套了过多的层级将带来相当大的性能开销。官方提供了Hierarchy Viewer工具来帮助我们查找可能的优化点。Hierarchy Viewer的使用方式这里就不作介绍了，官方文档([传送门](http://developer.android.com/training/improving-layouts/optimizing-layout.html))说得很清楚。通过它我们能查看各个页面的布局层次和以及各个步骤(测量、定位、绘制)的耗时，并根据这些数据做出相应的优化。
+即使使用的全都是官方提供的基础布局和控件，也不意味着就能做出高效的UI布局设计。每个布局(layout)，控件(Button、TextView等)，都需要进行初始化，测量大小、定位以及绘制。布局里嵌套了过多的层级将带来相当大的性能开销。官方提供了Hierarchy Viewer工具来帮助我们查找可能的优化点。Hierarchy Viewer的使用方式这里就不作介绍了，官方文档说得很清楚。通过它我们能查看各个页面的布局层次和以及各个步骤(测量、定位、绘制)的耗时，并根据这些数据做出相应的优化。([使用文档传送门](http://developer.android.com/training/improving-layouts/optimizing-layout.html))
 
 使用线性布局(LinearLayout)来组织界面是导致层级过多的主要原因，由于这种组织方式相当直观，因此深受新手的喜爱。为了避免这部分的开销，一般使用相对布局(RelativeLayout)来重组界面。使用相对布局能够很方便的将界面由层次多、每层控件少的狭长式树形机构，转换成层次少、每层控件多的扁平式树形结构。从而得到可观的性能提升。
 
