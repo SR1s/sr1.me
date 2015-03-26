@@ -1,5 +1,5 @@
 ---
-title:Android最佳实践之UI篇
+title: Android最佳实践之UI篇
 category: way-to-explore
 layout: post
 ---
