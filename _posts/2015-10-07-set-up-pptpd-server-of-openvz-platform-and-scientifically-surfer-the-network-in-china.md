@@ -33,9 +33,9 @@ tag: 爬坑之路
 
 一开始我参考的都是中文的教程，因为遇到了能连上VPN，但上不了网的问题，所以我把谷歌搜索结果前两页的教程都看了一遍，感觉都是大同小异，有的时候怀疑是不是从同一个作者那里抄过来的，因为某个谬误在很多篇教程里都提到了，这个下面会说到。
 
-## 1. 非OpenVz虚拟化架构的VPS和服务器
+## 1. 非OpenVZ虚拟化架构的VPS和服务器
 
-先给出一个Ubuntu社区的教程，这个教程适用于非OpenVz虚拟化架构的VPS，国内的教程来来去去说的都是这上面的东西：[https://help.ubuntu.com/community/PPTPServer](https://help.ubuntu.com/community/PPTPServer)
+先给出一个Ubuntu社区的教程，这个教程适用于非OpenVZ虚拟化架构的VPS，国内的教程来来去去说的都是这上面的东西：[https://help.ubuntu.com/community/PPTPServer](https://help.ubuntu.com/community/PPTPServer)
 
 如果英文阅读有障碍，这里给出一个还算靠谱的中文教程，但是千万千万要注意：
 
@@ -54,7 +54,7 @@ tag: 爬坑之路
 - Virtualbox上的系统无法使用pptp vpn的问题
 - 开启pptpd的debug输出，并使用`pptpd -f`来调试问题
 
-## 2. OpenVz虚拟化架构的VPS
+## 2. OpenVZ虚拟化架构的VPS
 
 我的VPS是搬瓦工提供的，这个提供商的VPS是基于OpenVZ的，它们跟主流的基于KVM、XEN的不一样，据说坑很多，比如搭建VPN服务器。o(╯□╰)o
 
@@ -63,9 +63,9 @@ tag: 爬坑之路
 先给出一个在OpenVZ上的教程，英文：[http://www.putdispenserhere.com/pptp-vpn-setup-guide-for-a-debian-openvz-vps/](http://www.putdispenserhere.com/pptp-vpn-setup-guide-for-a-debian-openvz-vps/)
 
 这个教程跟上一个的教程不一样的地方在于：
-上一个使用`iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth0 -j MASQUERADE`来转发流量，而OpenVz的教程使用的是`iptables -t nat -A POSTROUTING -j SNAT --to-source <你的VPS的公网IP>`
+上一个使用`iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eth0 -j MASQUERADE`来转发流量，而OpenVZ的教程使用的是`iptables -t nat -A POSTROUTING -j SNAT --to-source <你的VPS的公网IP>`
 
-同时，你会发现，使用`ifconfig`会看到OpenVz虚拟化架构的VPS上没有eth0这个设备，取而代之的是一个叫venet0:0的设备，关于这个设备，可以看OpenVZ官方维基上的[说明](http://wiki.openvz.org/Virtual_network_device)。
+同时，你会发现，使用`ifconfig`会看到OpenVZ虚拟化架构的VPS上没有eth0这个设备，取而代之的是一个叫venet0:0的设备，关于这个设备，可以看OpenVZ官方维基上的[说明](http://wiki.openvz.org/Virtual_network_device)。
 
 就是因为这个不同，导致了常规的方法不能成功。
 
@@ -75,7 +75,7 @@ tag: 爬坑之路
 
 # 关于sysctl -p执行报错的解决方案
 
-## 一个中文圈广泛传播的错误的解决方案
+## 1. 一个中文圈广泛传播的错误的解决方案
 
 很多人(包括我)，在配置开启ipv4转发的时候，遇到了这样一个错误：
 
