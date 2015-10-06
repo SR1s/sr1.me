@@ -1,5 +1,5 @@
 ---
-title: 虚假信息是如何炼成的
+title: VPN科学上网全攻略
 category: think-when-god-laugh
 layout: post
 tag: 爬坑之路
