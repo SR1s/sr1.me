@@ -1,5 +1,5 @@
 ---
-title: (自以为)优雅的跨进程单例的实现思路
+title: （自以为）优雅的跨进程单例的实现思路
 category: think-when-god-laugh
 layout: post
 tag: 爬坑之路
