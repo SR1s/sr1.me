@@ -29,8 +29,13 @@ Java基础是不需要说了吧。这里会说到大致需要多少水平的基�
 ## Chapter 4: UI设计，基础控件
 这里就比较枯燥了，这里会说下一些常用的技巧和注意点吧
 
+基础的控件学完了，怎么方便快捷的做出好看的UI和交互呢？最重要的是，符合Android Material Design！在一开始，很多东西都要我们徒手来完成，好在15年，官方推出了Android Design Support库，帮我们解放了双手：
+
+下面这个教程手把手带你领略了一把这个类库：
+https://inthecheesefactory.com/blog/android-design-support-library-codelab
+
 ## Chapter 5: Activity和跳转
-这里也很基础，基础组件之一
+这里也很基础，四大基础组件之一
 
 ## Chapter 6: Fragment
 这个现在用得很多，UI轻量化的方式，但从工作中来看，也轻量不到哪里去，而且没看到一个好的UI框架能很好的管理Fragment这块。
