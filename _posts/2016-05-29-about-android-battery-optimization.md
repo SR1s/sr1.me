@@ -25,4 +25,13 @@ adb shell dumpsys batterystats --enable full-wake-history
 
 # 测试完成后，导出bugreport
 adb bugreport > name_of_bugreport.txt
+
+# 设置手机进入不充电的状态 <- 这样我们才能连着电脑收集数据
+adb shell dumpsys battery unplug
+
+# adb shell dumpsys battery -h
+# Dump current battery state, or:
+#   set [ac|usb|wireless|status|level|invalid] <value>
+#   unplug
+#   reset
 ```
