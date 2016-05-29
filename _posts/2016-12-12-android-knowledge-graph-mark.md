@@ -74,6 +74,9 @@ https://inthecheesefactory.com/blog/android-design-support-library-codelab
 ## Chapter 17: 几种常见的数据格式json、xml
 前后台交互的根本
 
+html解析库：https://jsoup.org/
+目标是直接上方便使用的库，快速上手，搜索得到的结果大部分的资料还是很繁重的写法，心累。
+
 ## Chapter 18: 优化相关
 应用如何优化性能，说下工具？
 
