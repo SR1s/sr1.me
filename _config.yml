@@ -1,6 +1,17 @@
-baseurl: http://sr1.me
-markdown: rdiscount
-pygments: true
+title: So You Are The One
+author: SR1
+description:  始终对远方满怀期待。探索世界的好奇心万岁。
 
-paginate: 5
-paginate_path: "page:num"
+markdown: redcarpet
+highlighter: null
+permalink: /:title
+
+url: http://sr1.me
+baseurl: http://sr1.me
+
+redcarpet:
+  extensions: [strikethrough, tables]
+
+sass:
+  sass_dir: public/css
+  style: :compressed
