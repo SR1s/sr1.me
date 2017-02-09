@@ -68,7 +68,7 @@ body>header>figure.logo {
     width: 128px;
     height: 128px;
     background-repeat: no-repeat;
-    background-image: url(../images/logo.jpeg);
+    background-image: url(/images/logo.jpeg);
     background-size: 128px 128px;
     border-radius: 5px;
     border-width: 5px;
