@@ -138,4 +138,4 @@ OpenGL ES 驱动和GPU以并行/异步的机制运行。发起GL 调用时，为
 好了，就说到这吧，`glFinish` :)
 
 原文链接：[Let’s talk about eglMakeCurrent, eglSwapBuffers, glFlush, glFinish](https://katatunix.wordpress.com/2014/09/17/lets-talk-about-eglmakecurrent-eglswapbuffers-glflush-glfinish/)
-译文链接：[谈谈eglMakeCurrent、eglSwapBuffers、glFlush和glFinish](https://www.zybuluo.com/SR1s/note/650099)
+译文链接：[谈谈eglMakeCurrent、eglSwapBuffers、glFlush和glFinish](http://sr1.me/lets-talk-about-eglmakecurrent-eglswapbuffers-glflush-glfinish-chinese)
